@@ -11,7 +11,11 @@ account must fail.
 - [x] JUnit 4
 - [x] Gradle
 - [ ] Spring Boot
+- [ ] Rest API
 - [ ] Docker
 - [ ] Ruby Cucumber tests
+- [ ] Nginx
 - [ ] AWS
-- [ ] DynamoDB 
+- [ ] DynamoDB
+- [ ] CircleCI
+- [ ] Heroku
