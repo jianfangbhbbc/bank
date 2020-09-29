@@ -15,7 +15,7 @@ public class BankAccountTest {
     public void newlyOpenedAccountHasEmptyBalance() throws BankAccountActionInvalidException {
         bankAccount.open();
 
-        assertEquals(0, bankAccount.getBalance());
+        assertEquals(0, bankAccount.getBalance(), 0.0f);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class BankAccountTest {
 
         bankAccount.deposit(10);
 
-        assertEquals(10, bankAccount.getBalance());
+        assertEquals(10, bankAccount.getBalance(), 0.0f);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class BankAccountTest {
         bankAccount.deposit(5);
         bankAccount.deposit(23);
 
-        assertEquals(28, bankAccount.getBalance());
+        assertEquals(28, bankAccount.getBalance(), 0.0f);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class BankAccountTest {
 
         bankAccount.withdraw(5);
 
-        assertEquals(5, bankAccount.getBalance());
+        assertEquals(5, bankAccount.getBalance(), 0.0f);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class BankAccountTest {
         bankAccount.withdraw(10);
         bankAccount.withdraw(13);
 
-        assertEquals(0, bankAccount.getBalance());
+        assertEquals(0, bankAccount.getBalance(), 0.0f);
     }
 
     @Test
@@ -172,7 +172,7 @@ public class BankAccountTest {
 
         for (int i = 0; i < 10; i++) {
             adjustBalanceConcurrently();
-            assertEquals(1000, bankAccount.getBalance());
+            assertEquals(1000, bankAccount.getBalance(), 0.0f);
         }
     }
 

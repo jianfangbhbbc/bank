@@ -21,6 +21,8 @@ class BankAccount {
             throw new BankAccountActionInvalidException("Account closed");
         if (amount <= 0)
             throw new BankAccountActionInvalidException("Cannot deposit or withdraw negative amount");
+        if (balance == 0)
+            throw new BankAccountActionInvalidException("Cannot withdraw money from an empty account");
         if (balance >= amount)
             balance -= amount;
         else
@@ -29,6 +31,7 @@ class BankAccount {
     public synchronized double getBalance() throws BankAccountActionInvalidException {
         if (!isOpen)
             throw new BankAccountActionInvalidException("Account closed");
+        System.out.println("====================="+balance);
         return balance;
     }
     public void close() {
