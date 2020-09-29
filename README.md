@@ -15,6 +15,6 @@ account must fail.
 - [x] Java 11
 - [x] JUnit 4
 - [x] Gradle
-- [ ] Spring Boot
+- [x] Spring Boot
 - [ ] Nginx
 - [ ] Docker
