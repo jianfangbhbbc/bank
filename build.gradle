@@ -9,8 +9,8 @@ compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 group = 'jianfangbhbbc'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.11'
-targetCompatibility = '1.11'
+sourceCompatibility = '11'
+targetCompatibility = '11'
 
 repositories {
   mavenCentral()
