@@ -9,7 +9,7 @@ public class Application {
 
   @RequestMapping("/")
   public String home() {
-    return "A Bank Account App built with Spring Boot";
+    return "Welcome to Bletchley Park Bank";
   }
 
   public static void main(String[] args) {
