@@ -16,5 +16,8 @@ account must fail.
 - [x] JUnit 4
 - [x] Gradle
 - [x] Spring Boot
-- [ ] Nginx
+- [ ] Cucumber test 
+- [ ] Nginx/Apache
 - [ ] Docker
+- [ ] CI
+- [ ] Deploy
